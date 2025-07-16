@@ -6,6 +6,10 @@
 	objectVersion = 70;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		482C4F352E27CF7F005CA6B1 /* Gifu in Frameworks */ = {isa = PBXBuildFile; productRef = 482C4F342E27CF7F005CA6B1 /* Gifu */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		48307B4E2A43727400D3C3B0 /* JLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48307B5F2A43727500D3C3B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -26,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				482C4F352E27CF7F005CA6B1 /* Gifu in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +121,9 @@
 				Base,
 			);
 			mainGroup = 48307B452A43727400D3C3B0;
+			packageReferences = (
+				482C4F332E27CF7F005CA6B1 /* XCRemoteSwiftPackageReference "Gifu" */,
+			);
 			productRefGroup = 48307B4F2A43727400D3C3B0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -360,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		482C4F332E27CF7F005CA6B1 /* XCRemoteSwiftPackageReference "Gifu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kaishin/Gifu.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		482C4F342E27CF7F005CA6B1 /* Gifu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 482C4F332E27CF7F005CA6B1 /* XCRemoteSwiftPackageReference "Gifu" */;
+			productName = Gifu;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 48307B462A43727400D3C3B0 /* Project object */;
 }
