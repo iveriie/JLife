@@ -48,7 +48,12 @@ final class LoadingView: UIView {
   }
   
   private func configureImage() {
-    gifView.animate(withGIFNamed: "JLifeLogo")
+    gifView.animate(withGIFNamed: "JLifeLogo",
+                    loopCount: 1,
+                    loopBlock: {
+      NotificationCenter.default.post(name: NSNotification.Name("isGifDone"),
+                                      object: nil)
+    })
   }
   
 }
