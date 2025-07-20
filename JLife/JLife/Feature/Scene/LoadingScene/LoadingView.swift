@@ -28,7 +28,7 @@ final class LoadingView: UIView {
   }
   
   private func setUpUI(){
-    backgroundColor = .systemBackground
+    backgroundColor = .white
     setViewHierarchy()
     setConstraints()
     configureImage()
