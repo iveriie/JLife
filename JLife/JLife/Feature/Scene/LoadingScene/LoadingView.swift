@@ -43,7 +43,8 @@ final class LoadingView: UIView {
       gifView.centerXAnchor.constraint(equalTo: centerXAnchor),
       gifView.centerYAnchor.constraint(equalTo: centerYAnchor),
       gifView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 30),
-      gifView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -30)
+      gifView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -30),
+      gifView.heightAnchor.constraint(equalTo: gifView.widthAnchor)
     ])
   }
   
